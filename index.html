@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        .first {
+            background-image: url('./assets/img/bg-image.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 924px;
+        }
+
+        .carousel-container {
+            overflow: hidden;
+        }
+
+        .carousel-wrapper {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-item {
+            min-width: 476px;
+            height: 600px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="container mx-auto flex justify-between items-center p-3">
+
+            <div>
+                <img src="./assets/icon/Frame 2.svg" alt="#">
+            </div>
+
+            <nav class=" hidden md:flex ">
+                <ul class="flex gap-x-[50px]">
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <div class="flex gap-x-3 items-center">
+                <img src="./assets/icon/search (2).svg" alt="#">
+                <img src="./assets/icon/like.svg" alt="#">
+                <img class="hidden md:flex" src="./assets/icon/Call.svg" alt="#">
+
+                <div class=" border rounded-full w-[50px] h-[50px] pl-[9px] pt-[3px] bg-black  md:hidden">
+                    <span class=""><i class="bi bi-list text-[30px] text-white"></i></span>
+                </div>
+
+                <select class=" hidden md:flex w-[79px] h-[50px] p-3  border rounded-full">
+                    <option>RU</option>
+                    <option>UZ</option>
+                    <option>EN</option>
+                </select>
+            </div>
+
+
+        </div>
+
+    </header>
+
+    <main>
+        <section class="first ">
+            <div class="container mx-auto ml-0">
+
+                <div class=" ml-5 pt-64 pb-36 sm:ml-5 md:ml-32 ">
+                    <h1 class="text-[35px] pt-56 sm:text-[65px] md:text-[70px]  text-white ">Найдите <br> идеальное место <br> для жизни</h1>
+                    <p class="text-white">Откройте двери в новое будущее с нами</p>
+                    <br>
+                   <div class="">
+                    <button class=" w-[180px] sm:w-[223px] h-[49px] bg-[#E1AF93] hover:bg-[#ac9081] ">Подробнее</button>
+                   </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="second mt-[250px]">
+            <div class="container mx-auto">
+                <div class="wrapper">
+                    <div class="flex justify-between  items-center">
+
+                        <h1 class="text-[55px]">О компании <br> <span class="text-[#E1AF93]">RMC DE LUXE</span></h1>
+
+
+                        <div class="w-[710px]">
+
+                            <ul class="flex gap-x-[120px] mb-5">
+                                <li><a href="#" class="text-xl hover:text-[#E1AF93]">Аренда</a></li>
+                                <li><a href="#" class="text-xl hover:text-[#E1AF93]">Купля - продажа</a></li>
+                                <li><a href="#" class="text-xl hover:text-[#E1AF93]">Управление</a></li>
+                            </ul>
+
+                            <p class=" text-xl leading-7 ">Широкий выбор объектов: Мы предлагаем разнообразные варианты
+                                аренд-от
+                                квартир идомов
+                                до коммерческих помещений, удовлетворяющие любые потребности <br> <br>Надежные
+                                арендаторы:
+                                Проведение тщательной проверки и отбора арендаторов для обеспечения стабильного дохода и
+                                минимизации рисков
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <img class="mt-[50px] " src="./assets/img/build.png" alt="#">
+
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-[#EDF3F5]">
+            <div class="container mx-auto">
+                <div class="flex justify-between mt-[250px] gap-x-36 p-20">
+                    <div>
+                        <h1 class="text-[55px] pb-12">Инвестиции в недвижимость в Дубае</h1>
+
+                        <p class="text-xl pb-10">Недвижимость в Дубае предоставляет отличные возможности для получения
+                            стабильного дохода и
+                            увеличения капитала <br> <br>Полный цикл инвестиций: От анализа рынка и подбора объектов до
+                            управления инвестициями и их реализации. <br><br>Наши эксперты помогут вам на всех этапах
+                            инвестиционного процесса, обеспечивая высокое качество обслуживания и надежность. <br><br>
+                            Наши
+                            услуги включают управление вашей инвестиционной недвижимостью, обеспечивая её сохранность и
+                            стабильный доход. Мы берем на себя все аспекты управления, включая подбор и проверку
+                            арендаторов, техническое обслуживание, финансовую отчетность и юридическую поддержку.
+                        </p>
+                        <button class="w-56 h-12 bg-[#E1AF93] text-white hover:bg-[#ac9081]">Подробнее</button>
+                    </div>
+
+                    <img src="./assets/img/build-2.png" alt="#">
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container mx-auto mt-[250px]">
+                <div>
+                    <h1 class="text-[55px] pb-[50px]">Что входит в услугу <br> управления недвижимостью</h1>
+                    <div class="grid grid-cols-2  items-center">
+
+                        <div>
+                            <div class="border border-l-0 p-8">
+                                <label class="inline-flex items-center">
+                                    <img src="./assets/icon/Checkmark.svg" alt="#">
+                                    <span class="ml-2">Проверка арендаторов (кредитная история, рекомендации)</span>
+                                </label>
+                            </div>
+
+                            <div class=" border border-l-0 p-8">
+                                <label class="inline-flex items-center">
+                                    <img src="./assets/icon/Checkmark.svg" alt="#">
+                                    <span class="ml-2">Подготовка и подписание договоров аренды</span>
+                                </label>
+                            </div>
+
+                            <div class=" border border-l-0 p-8">
+                                <label class="inline-flex items-center">
+                                    <img src="./assets/icon/Checkmark.svg" alt="#">
+                                    <span class="ml-2">Сбор арендной платы</span>
+                                </label>
+                            </div>
+
+                            <div class=" border border-l-0 p-8">
+                                <label class="inline-flex items-center">
+                                    <img src="./assets/icon/Checkmark.svg" alt="#">
+                                    <span class="ml-2">Обработка запросов и жалоб арендаторов</span>
+                                </label>
+                            </div>
+
+                            <div class=" border border-l-0 border-b-0 p-8">
+                                <label class="inline-flex items-center">
+                                    <img src="./assets/icon/Checkmark.svg" alt="#">
+                                    <span class="ml-2">Контроль соблюдения условий аренды</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class=" border border-r-0 p-8">
+                                <label class="inline-flex items-center">
+                                    <img src="./assets/icon/Checkmark.svg" alt="#">
+                                    <span class="ml-2">Регулярное техническое обслуживание</span>
+                                </label>
+                            </div>
+                            <div class=" border border-r-0 p-8">
+                                <label class="inline-flex items-center">
+                                    <img src="./assets/icon/Checkmark.svg" alt="#">
+                                    <span class="ml-2">Организация и проведение ремонтных работ</span>
+                                </label>
+                            </div>
+                            <div class=" border border-r-0 p-8">
+                                <label class="inline-flex items-center">
+                                    <img src="./assets/icon/Checkmark.svg" alt="#">
+                                    <span class="ml-2">Контроль за состоянием недвижимости</span>
+                                </label>
+                            </div>
+
+                            <div class=" border border-r-0 p-8 mb-[100px]">
+                                <label class="inline-flex items-center">
+                                    <img src="./assets/icon/Checkmark.svg" alt="#">
+                                    <span class="ml-2">Подбор надежных арендаторов</span>
+                                </label>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="third mt-[250px]">
+            <div class="container mx-auto">
+                <div>
+                    <h1 class="text-[55px] pb-10">Почему выбирают нас</h1>
+
+
+                    <div>
+
+
+                        <div class="flex gap-5">
+
+                            <div
+                                class="border border-[#EAEAEA] w-[467px] h-[326px] p-7 pt-[86px] transition duration-300 hover:scale-105 ">
+                                <h1 class="text-3xl">Опыт и профессионализм</h1> <br>
+                                <p>Наши специалисты имеют многолетний опыт в различных сферах недвижимости, что
+                                    гарантирует высокое качество услуг</p>
+                            </div>
+
+                            <div
+                                class="border border-[#EAEAEA] w-[467px] h-[326px] transition duration-300 hover:scale-105 ">
+                                <img src="./assets/img/Image (1).png" alt="#">
+                            </div>
+
+                            <div
+                                class="border border-[#EAEAEA] w-[467px] h-[326px] p-7 pt-[86px] transition duration-300 hover:scale-105 ">
+                                <h1 class="text-3xl">Опыт и профессионализм</h1> <br>
+                                <p>Наши специалисты имеют многолетний опыт в различных сферах недвижимости, что
+                                    гарантирует высокое качество услуг</p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-5">
+
+
+                            <div
+                                class="border border-[#EAEAEA] w-[467px] h-[326px]  mt-5 mb-5 transition duration-300 hover:scale-105">
+                                <img src="./assets/img/Image (2).png" alt="#">
+                            </div>
+
+                            <div
+                                class="border border-[#EAEAEA] w-[467px] h-[326px] p-7 pt-[86px] mt-5 mb-5 transition duration-300 hover:scale-105">
+                                <h1 class="text-3xl">Опыт и профессионализм</h1> <br>
+                                <p>Наши специалисты имеют многолетний опыт в различных сферах недвижимости, что
+                                    гарантирует высокое качество услуг</p>
+                            </div>
+
+
+                            <div
+                                class="border border-[#EAEAEA] w-[467px] h-[326px] mt-5  mb-5 transition duration-300 hover:scale-105">
+                                <img src="./assets/img/Image (3).png" alt="#">
+                            </div>
+                        </div>
+
+                        <div class="flex gap-5">
+
+                            <div
+                                class="border border-[#EAEAEA] w-[467px] h-[326px] p-7 pt-[86px] transition duration-300 hover:scale-105 ">
+                                <h1 class="text-3xl">Опыт и профессионализм</h1> <br>
+                                <p>Наши специалисты имеют многолетний опыт в различных сферах недвижимости, что
+                                    гарантирует высокое качество услуг</p>
+                            </div>
+
+                            <div
+                                class="border border-[#EAEAEA] w-[467px] h-[326px] transition duration-300 hover:scale-105 ">
+                                <img src="./assets/img/Image (4).png" alt="#">
+                            </div>
+
+                            <div
+                                class="border border-[#EAEAEA] w-[467px] h-[326px] p-7 pt-[86px] transition duration-300 hover:scale-105">
+                                <h1 class="text-3xl">Опыт и профессионализм</h1> <br>
+                                <p>Наши специалисты имеют многолетний опыт в различных сферах недвижимости, что
+                                    гарантирует высокое качество услуг</p>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-[250px]">
+            <div class="container mx-auto">
+
+                <div class="flex items-center justify-between">
+                    <h1 class="text-[55px] pb-[60px]">Новостройки</h1>
+
+                    <div class="relative">
+                        <button id="prev" class="relative  left-0 transform -translate-y-1/2  "><i
+                                class="bi bi-arrow-left-circle text-[70px]"></i></button>
+                        <button id="next" class="relative  right-0 transform -translate-y-1/2  "><i
+                                class="bi bi-arrow-right-circle text-[70px]"></i></button>
+                    </div>
+                </div>
+
+                <div class="carousel-container relative w-full ">
+
+                    <div class="carousel-wrapper flex">
+                        <div class="carousel-item  flex items-center justify-center"><img
+                                src="./assets/img/carusel-1.png" alt=""></div>
+                        <div class="carousel-item  flex items-center justify-center"><img
+                                src="./assets/img/carusel-2.png" alt=""></div>
+                        <div class="carousel-item flex items-center justify-center"><img
+                                src="./assets/img/carusel-3.png" alt=""></div>
+                        <div class="carousel-item  flex items-center justify-center"><img
+                                src="./assets/img/carusel-1.png" alt=""></div>
+                        <div class="carousel-item  flex items-center justify-center"><img
+                                src="./assets/img/carusel-2.png" alt=""></div>
+                        <div class="carousel-item flex items-center justify-center"><img
+                                src="./assets/img/carusel-3.png" alt=""></div>
+                        <div class="carousel-item  flex items-center justify-center"><img
+                                src="./assets/img/carusel-1.png" alt=""></div>
+
+                    </div>
+
+
+                </div>
+
+                <div class="flex justify-center items-center mt-[60px]">
+                    <button class="w-[223px] h-[49px] bg-[#E1AF93] hover:bg-[#ac9081] text-white">Смотреть все</button>
+                </div>
+
+
+
+
+            </div>
+        </section>
+
+        <section class="mt-[250px]">
+            <div class="container mx-auto">
+
+                <div class="mb-10">
+                    <h1 class="text-[55px]">Рассчитайте ипотеку</h1>
+                </div>
+
+                <div class=" flex gap-[103px] p-10 shadow-2xl">
+
+                    <div class="space-y-4 p-4">
+
+                        <div class="flex gap-10">
+                            <div class="flex-1">
+                                <label for="input1" class="block text-gray-700">Стоимость недвижимости (у.е.)</label>
+                                <input id="input1" type="text" placeholder="Введите стоимость"
+                                    class="mt-1 p-2 border border-gray-300 rounded w-[350px] h-[50px]" />
+                            </div>
+
+                            <div class="flex-1">
+                                <label for="input2" class="block text-gray-700">Первоначальный взнос (у.е.)</label>
+                                <input id="input2" type="text" placeholder="Введите размер взноса"
+                                    class="mt-1 p-2 border border-gray-300 rounded w-[350px] h-[50px]" />
+                            </div>
+                        </div>
+
+                        <div class="flex gap-10">
+
+                            <div class="flex-1">
+                                <label for="input4" class="block text-gray-700">Срок в годах</label>
+                                <input id="input4" type="text" placeholder="Введите срок"
+                                    class="mt-1 p-2 border border-gray-300 rounded w-[350px] h-[50px]" />
+                            </div>
+
+                            <div class="flex-1">
+                                <label for="input4" class="block text-gray-700">Ставка (%)</label>
+                                <input id="input4" type="text" placeholder="Введите размер ставки"
+                                    class="mt-1 p-2 border border-gray-300 rounded w-[350px] h-[50px]" />
+                            </div>
+                        </div>
+
+                        <div class="flex flex-wrap gap-4 pt-5">
+                            <button
+                                class="w-[223px] h-[49px] bg-[#E1AF93] hover:bg-[#ac9081] text-white">Рассчитать</button>
+
+                        </div>
+                    </div>
+
+                    <div class="flex gap-8 ml-5">
+
+                        <div class="gap-7">
+                            <div class="mb-10 mt-2">
+                                <p class="text-lg text-[#B3B3B3]">Ежемесячный платеж</p>
+                                <h1 class="text-2xl text-[#333333]">4 410 у.е.</h1>
+                            </div>
+                            <div>
+                                <p class="text-lg text-[#B3B3B3]">Процентная ставка</p>
+                                <h1 class="text-2xl text-[#333333]">24%</h1>
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <div class="mb-10 mt-2">
+                                <p class="text-lg text-[#B3B3B3]">Сумма кредита</p>
+                                <h1 class="text-2xl text-[#333333]">200 000 у.е.</h1>
+                            </div>
+                            <div>
+                                <p class="text-lg text-[#B3B3B3]">Дата последнего платежа</p>
+                                <h1 class="text-2xl text-[#333333]">28 июля 2034 г</h1>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+
+
+
+
+            </div>
+        </section>
+
+        <section class="mt-[260px]">
+            <div class="container mx-auto">
+                <div class="bg-[#EDF3F5] flex justify-between">
+
+                    <div class="p-[60px] ">
+                        <h1 class="text-[55px]">Остались вопросы? <br> Свяжитесь с нами</h1>
+
+                        <div class="mt-[50px]">
+                            <div class="mb-5">
+                                <input type="text" placeholder="ФИО *"
+                                    class="  w-[407px] h-[50px] p-3 bg-inherit border border-b-[1px] border-t-0 border-l-0 border-r-0 ">
+                            </div>
+                            <div class="mb-5">
+                                <input type="text" placeholder="Номер телефона *"
+                                    class=" w-[407px] h-[50px] p-3 bg-inherit border border-b-[1px] border-t-0 border-l-0 border-r-0 ">
+                            </div>
+                            <div class="mb-5">
+                                <input type="text" placeholder="E-mail"
+                                    class=" w-[407px] h-[50px] p-3 bg-inherit border border-b-[1px] border-t-0 border-l-0 border-r-0 ">
+                            </div>
+                            <div class="mb-5">
+                                <input type="text" placeholder="Ваш вопрос"
+                                    class=" w-[407px] h-[50px] p-3 bg-inherit border border-b-[1px] border-t-0 border-l-0 border-r-0 ">
+                            </div>
+                            <div class="mt-11">
+                                <button
+                                    class="w-[223px] h-[49px] bg-[#E1AF93] hover:bg-[#ac9081] text-white">Отправить</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="h-full">
+                        <img src="./assets/img/big-img.png" alt="#">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-[250px]">
+            <div class="container mx-auto">
+
+                <div>
+
+                    <div class="pb-5">
+                        <h1 class="text-[55px]">Блог</h1>
+                    </div>
+
+
+                    <div class="flex items-center justify-between ">
+
+                        <div class="max-w-sm bg-white  dark:bg-gray-800 dark:border-gray-700">
+                            <a href="#">
+                                <img class="mb-3" src="./assets/img/restengel-1.png" width="466" height="300" alt="" />
+                            </a>
+                            <div class="">
+                                <a href="#">
+                                    <h1 class="mb-2 text-2xl  tracking-tight text-gray-900 dark:text-white">
+                                        Тенденции и прогнозы рынка недвижимости на 2024 год</h1>
+                                </a>
+
+                                <a href="#" class="flex items-center text-lg text-[#E1AF93]">
+                                    Подробнее
+                                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <div class="max-w-sm bg-white  dark:bg-gray-800 dark:border-gray-700">
+                            <a href="#">
+                                <img class="mb-3 " src="./assets/img/Rectangle-2.png" width="766" height="300" alt="" />
+                            </a>
+                            <div class="">
+                                <a href="#">
+                                    <h1 class="mb-2 text-2xl  tracking-tight text-gray-900 dark:text-white">
+                                        Тенденции и прогнозы рынка недвижимости на 2024 год</h1>
+                                </a>
+
+                                <a href="#" class="flex items-center text-lg text-[#E1AF93]">
+                                    Подробнее
+                                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <div class="max-w-sm bg-white  dark:bg-gray-800 dark:border-gray-700">
+                            <a href="#">
+                                <img class="mb-3" src="./assets/img/Rectangle-3.png" width="466" height="300" alt="" />
+                            </a>
+                            <div class="">
+                                <a href="#">
+                                    <h1 class="mb-2 text-2xl  tracking-tight text-gray-900 dark:text-white">
+                                        Тенденции и прогнозы рынка недвижимости на 2024 год</h1>
+                                </a>
+
+                                <a href="#" class="flex items-center text-lg text-[#E1AF93]">
+                                    Подробнее
+                                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="flex flex-wrap gap-4 pt-5 justify-center mt-14">
+                        <button
+                            class="w-[223px] h-[49px] bg-[#E1AF93] hover:bg-[#ac9081] text-white">Рассчитать</button>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="bg-[#F7F7F7] mt-[250px]">
+        <div class="container mx-auto">
+
+
+            <div>
+
+                <div class="flex justify-between items-center pt-12">
+
+                    <div>
+                        <img src="./assets/icon/Frame 2.svg" alt="#">
+                    </div>
+
+                    <div class="flex items-center gap-5">
+                        <img src="./assets/icon/instagram.svg" alt="#">
+                        <img src="./assets/icon/telegram.svg" alt="#">
+                        <img src="./assets/icon/whatsapp.svg" alt="#">
+                        <img src="./assets/icon/facebook.svg" alt="#">
+                    </div>
+
+                </div>
+
+
+                <div class="border mt-12 border-l-0 border-r-0">
+                    <div class="flex  text-black list-none pt-8 pb-8 gap-x-[148px]">
+                        <ul>
+                            <li class="text-2xl font-sans"><a href="#" class="hover:underline">Услуги</a></li>
+                            <li><a href="#" class="hover:underline">Купить</a></li>
+                            <li><a href="#" class="hover:underline">Арендовать</a></li>
+                            <li><a href="#" class="hover:underline">Продать</a></li>
+                            <li><a href="#" class="hover:underline">Оценить</a></li>
+                        </ul>
+
+                        <ul>
+                            <li class="text-2xl font-sans"><a href="#" class="hover:underline">Недвижимость</a></li>
+                            <li><a href="#" class="hover:underline">Квартиры</a></li>
+                            <li><a href="#" class="hover:underline">Новостройки</a></li>
+                            <li><a href="#" class="hover:underline">Дома и участки</a></li>
+                            <li><a href="#" class="hover:underline">Коммерческая</a></li>
+                        </ul>
+
+                        <ul>
+                            <li class="text-2xl font-sans"><a href="#" class="hover:underline">Компания</a></li>
+                            <li><a href="#" class="hover:underline">О нас</a></li>
+                            <li><a href="#" class="hover:underline">Блог</a></li>
+                            <li><a href="#" class="hover:underline">Контакты</a></li>
+                            <li><a href="#" class="hover:underline">Связаться</a></li>
+                        </ul>
+
+                        <ul>
+                            <li class="text-2xl font-sans"><a href="#" class="hover:underline">Другое</a></li>
+                            <li><a href="#" class="hover:underline">Ипотечный калькулятор</a></li>
+                            <li><a href="#" class="hover:underline"></a>Инвестиции в недвижимость <br> в Дубае</li>
+
+                        </ul>
+                        
+                    </div>
+                </div>
+
+                <div class="flex justify-between items-center ">
+                    <p class="text-base text-[#B3B3B3]">2024 © RMC De Luxe real estate LLC. Все права защищены</p>
+                    <img src="./assets/icon/result logo.svg" alt="#">
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+<script>
+    const prevButton = document.getElementById('prev');
+    const nextButton = document.getElementById('next');
+    const wrapper = document.querySelector('.carousel-wrapper');
+    let index = 0;
+
+    function updateCarousel() {
+        const offset = -index * 476;
+        wrapper.style.transform = `translateX(${offset}px)`;
+    }
+
+    nextButton.addEventListener('click', () => {
+        index = (index + 1) % 5;
+        updateCarousel();
+    });
+
+    prevButton.addEventListener('click', () => {
+        index = (index - 1 + 5) % 5;
+        updateCarousel();
+    });
+</script>
+
+</html>
